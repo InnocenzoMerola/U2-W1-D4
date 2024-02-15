@@ -1,0 +1,118 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px 15px;
+  font-family: "Indie Flower";
+  background-color: #6e6e6e;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 50vh;
+  margin-block: 60px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-inline: 6rem;
+  max-width: 80rem;
+}
+div {
+  padding: 4rem;
+  cursor: pointer;
+  margin: 15px;
+  box-shadow: 0 10px 10px #3e3e3e;
+  transition: all 200ms;
+  background: linear-gradient(1deg, #0000008a, transparent);
+}
+
+div:first-of-type {
+  transform: rotate(354deg);
+  animation: split 500ms;
+}
+
+div:nth-of-type(2) {
+  transform: rotate(7deg);
+  animation: split 1.4s;
+}
+div:nth-of-type(3) {
+  transform: rotate(350deg);
+  animation: split 800ms;
+}
+div:nth-of-type(4) {
+  transform: rotate(14deg);
+  animation: split 1s;
+}
+div:nth-of-type(5) {
+  transform: rotate(355deg);
+  animation: split 2.2s;
+}
+div:nth-of-type(6) {
+  transform: rotate(353deg);
+  animation: split 2s;
+}
+div:nth-of-type(7) {
+  transform: rotate(354deg);
+  animation: split 1.6s;
+}
+div:last-of-type {
+  transform: rotate(9deg);
+  animation: split 2.4s;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 20px;
+}
+.yellow {
+  background-color: #eeefaf;
+}
+
+.green {
+  background-color: #9abd9b;
+}
+
+.violet {
+  background-color: #a3a4bb;
+}
+
+div:hover {
+  transform: scale(1.2);
+  box-shadow: 0 10px 20px #303030;
+  transition: all 250ms 100ms;
+}
+
+@keyframes split {
+  from {
+    opacity: 0;
+    transform: scale(8);
+  }
+  25% {
+    opacity: 0;
+    transform: scale(7);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(4);
+  }
+  65% {
+    opacity: 1;
+    transform: scale(2);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
