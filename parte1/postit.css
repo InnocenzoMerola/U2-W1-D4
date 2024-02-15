@@ -93,7 +93,7 @@ div:hover {
 @keyframes split {
   from {
     opacity: 0;
-    transform: scale(8);
+    transform: scale(10);
   }
   25% {
     opacity: 0;
@@ -101,11 +101,11 @@ div:hover {
   }
   50% {
     opacity: 0;
-    transform: scale(4);
+    transform: scale(2);
   }
   65% {
     opacity: 1;
-    transform: scale(2);
+    transform: scale(0.8);
   }
   80% {
     opacity: 1;
